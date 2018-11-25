@@ -1,0 +1,104 @@
+﻿生成启动时间为 2018/11/21 星期三 22:03:11。
+     1>项目“E:\googletest-test\gmock-demo\gmock-helloworld\tests\tests.vcxproj”在节点 2 上(Rebuild 个目标)。
+     1>ClCompile:
+         D:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /I"E:\googletest-test\gtest\include" /I"E:\googletest-test\gmock-demo\gmock-helloworld\helloworld\code" /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /Gm /EHsc /RTC1 /MTd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\" /Fd"Debug\vc140.pdb" /Gd /TP /analyze- /errorReport:prompt TestHelloWorld.cpp tests.cpp
+         tests.cpp
+         TestHelloWorld.cpp
+     1>d:\program files (x86)\microsoft visual studio 14.0\vc\include\type_traits(1501): error C2893: 未能使函数模板“unknown-type std::invoke(_Callable &&,_Types &&...)”专用化
+         d:\program files (x86)\microsoft visual studio 14.0\vc\include\type_traits(1501): note: 用下列模板参数:
+         d:\program files (x86)\microsoft visual studio 14.0\vc\include\type_traits(1501): note: “_Callable=_Decayed &”
+         d:\program files (x86)\microsoft visual studio 14.0\vc\include\type_traits(1501): note: “_Types={}”
+         d:\program files (x86)\microsoft visual studio 14.0\vc\include\functional(210): note: 参见对正在编译的函数 模板 实例化“_Rx std::_Invoke_ret<_Rx,_Callable&>(std::_Forced<_Rx,false>,_Callable &)”的引用
+                 with
+                 [
+                     _Rx=std::string,
+                     _Callable=_Decayed
+                 ]
+         d:\program files (x86)\microsoft visual studio 14.0\vc\include\functional(208): note: 编译类 模板 成员函数“std::string std::_Func_impl<_Decayed,_Alloc,_Ret>::_Do_call(void)”时
+                 with
+                 [
+                     _Alloc=std::allocator<int>,
+                     _Ret=std::string
+                 ]
+         d:\program files (x86)\microsoft visual studio 14.0\vc\include\functional(136): note: 参见对正在编译的类 模板 实例化“std::_Func_impl<_Decayed,_Alloc,_Ret>”的引用
+                 with
+                 [
+                     _Alloc=std::allocator<int>,
+                     _Ret=std::string
+                 ]
+         d:\program files (x86)\microsoft visual studio 14.0\vc\include\functional(339): note: 参见对正在编译的类 模板 实例化“std::_Is_large<_Myimpl>”的引用
+         d:\program files (x86)\microsoft visual studio 14.0\vc\include\functional(318): note: 参见对正在编译的函数 模板 实例化“void std::_Func_class<_Ret>::_Reset_alloc<_Ty,std::allocator<int>>(_Fx &&,const _Alloc &)”的引用
+                 with
+                 [
+                     _Ret=std::string,
+                     _Ty=testing::internal::DoDefaultAction,
+                     _Fx=testing::internal::DoDefaultAction,
+                     _Alloc=std::allocator<int>
+                 ]
+         d:\program files (x86)\microsoft visual studio 14.0\vc\include\functional(318): note: 参见对正在编译的函数 模板 实例化“void std::_Func_class<_Ret>::_Reset_alloc<_Ty,std::allocator<int>>(_Fx &&,const _Alloc &)”的引用
+                 with
+                 [
+                     _Ret=std::string,
+                     _Ty=testing::internal::DoDefaultAction,
+                     _Fx=testing::internal::DoDefaultAction,
+                     _Alloc=std::allocator<int>
+                 ]
+         d:\program files (x86)\microsoft visual studio 14.0\vc\include\functional(484): note: 参见对正在编译的函数 模板 实例化“void std::_Func_class<_Ret>::_Reset<testing::internal::DoDefaultAction>(_Fx &&)”的引用
+                 with
+                 [
+                     _Ret=std::string,
+                     _Fx=testing::internal::DoDefaultAction
+                 ]
+         d:\program files (x86)\microsoft visual studio 14.0\vc\include\functional(484): note: 参见对正在编译的函数 模板 实例化“void std::_Func_class<_Ret>::_Reset<testing::internal::DoDefaultAction>(_Fx &&)”的引用
+                 with
+                 [
+                     _Ret=std::string,
+                     _Fx=testing::internal::DoDefaultAction
+                 ]
+         e:\googletest-test\gtest\include\gmock\gmock-actions.h(373): note: 参见对正在编译的函数 模板 实例化“std::function<F>::function<G>(_Fx)”的引用
+                 with
+                 [
+                     F=std::string (void),
+                     G=testing::internal::DoDefaultAction,
+                     _Fx=testing::internal::DoDefaultAction
+                 ]
+         e:\googletest-test\gtest\include\gmock\gmock-actions.h(373): note: 参见对正在编译的函数 模板 实例化“std::function<F>::function<G>(_Fx)”的引用
+                 with
+                 [
+                     F=std::string (void),
+                     G=testing::internal::DoDefaultAction,
+                     _Fx=testing::internal::DoDefaultAction
+                 ]
+         e:\googletest-test\gtest\include\gmock\gmock-spec-builders.h(905): note: 参见对正在编译的函数 模板 实例化“testing::Action<F>::Action<testing::internal::DoDefaultAction,void>(G &&)”的引用
+                 with
+                 [
+                     F=std::string (void),
+                     G=testing::internal::DoDefaultAction
+                 ]
+         e:\googletest-test\gtest\include\gmock\gmock-spec-builders.h(905): note: 参见对正在编译的函数 模板 实例化“testing::Action<F>::Action<testing::internal::DoDefaultAction,void>(G &&)”的引用
+                 with
+                 [
+                     F=std::string (void),
+                     G=testing::internal::DoDefaultAction
+                 ]
+         e:\googletest-test\gtest\include\gmock\gmock-spec-builders.h(894): note: 编译类 模板 成员函数“testing::internal::TypedExpectation<F>::TypedExpectation(testing::internal::FunctionMockerBase<F> *,const char *,int,const std::string &,const std::tuple<> &)”时
+                 with
+                 [
+                     F=std::string (void)
+                 ]
+         e:\googletest-test\gtest\include\gmock\gmock-spec-builders.h(1625): note: 参见对正在编译的函数 模板 实例化“testing::internal::TypedExpectation<F>::TypedExpectation(testing::internal::FunctionMockerBase<F> *,const char *,int,const std::string &,const std::tuple<> &)”的引用
+                 with
+                 [
+                     F=std::string (void)
+                 ]
+         e:\googletest-test\gmock-demo\gmock-helloworld\tests\testhelloworld.cpp(11): note: 参见对正在编译的类 模板 实例化“testing::internal::TypedExpectation<F>”的引用
+                 with
+                 [
+                     F=std::string (void)
+                 ]
+         正在生成代码...
+     1>已完成生成项目“E:\googletest-test\gmock-demo\gmock-helloworld\tests\tests.vcxproj”(Rebuild 个目标)的操作 - 失败。
+
+生成失败。
+
+已用时间 00:00:01.74
